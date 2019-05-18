@@ -22,8 +22,6 @@
 	<context:component-scan
 		base-package="kr.ac.hojun.cse.controller" />
 
-
-
 	<beans:bean id="tilesViewResolver"
 		class="org.springframework.web.servlet.view.tiles3.TilesViewResolver">
 	</beans:bean>

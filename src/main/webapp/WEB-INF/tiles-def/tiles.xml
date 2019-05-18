@@ -22,7 +22,6 @@
     <put-attribute name="body" value="/WEB-INF/views/posts.jsp" />
   </definition>
   
-  
   <definition name="admin" extends="base">
     <put-attribute name="title" value="Administrator Page" />
     <put-attribute name="body" value="/WEB-INF/views/admin.jsp" />
@@ -43,13 +42,4 @@
     <put-attribute name="body" value="/WEB-INF/views/updatePost.jsp" />
   </definition>
   
-  
 </tiles-definitions> 
-
-
-
-
-
-
-
-
