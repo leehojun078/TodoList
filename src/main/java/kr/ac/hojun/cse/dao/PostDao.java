@@ -113,14 +113,14 @@ public class PostDao {
 		String state = post.getState();
 		String description = post.getDescription();
 		
-		String sqlStatement = "update post set title=?, priority=?, deadline=?, state=?, description=? "
+		String sqlStatement = "update post set title=?,priority=?, deadline=?, state=?, description=? "
 							+ "where id=?";
 		
 		return (jdbcTemplate.update(sqlStatement, 
 				new Object[] {title, priority, deadline, state, description, id}) == 1);
 	}
 
-	//post의 state를 '완료'로 설정
+	//post의 state를 완료로 설정
 	public boolean completePost(int id) {
 
 		String sqlStatement = "update post set state = '완료' where id = ?";
