@@ -7,7 +7,6 @@
 		<a href="#">Back to top</a>
 	</p>
 	<p>
-		&copy; 2018-2019 Company, Inc. &middot; <a href="#">Privacy</a>
-		&middot; <a href="#">Terms</a>
+		&copy; 2018-2019 Company, Inc.
 	</p>
 </footer>

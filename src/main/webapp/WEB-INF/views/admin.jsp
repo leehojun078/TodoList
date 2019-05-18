@@ -10,7 +10,7 @@
 	
 	<div class="container">
 		 <h2> <a href="<c:url value="/admin/postInventory"/>">Posts Inventory </a> </h2> 
-		 <p class="lead">Here you can view, check, modify the Posts Status!</p>
+		 <p class="lead">게시물을 확인, 추가, 수정, 삭제 할 수 있습니다.</p>
 	</div>
 	
 	

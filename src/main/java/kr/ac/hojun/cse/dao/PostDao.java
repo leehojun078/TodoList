@@ -3,6 +3,7 @@ package kr.ac.hojun.cse.dao;
 import java.sql.ResultSet;
 
 import java.sql.SQLException;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 
@@ -26,10 +27,11 @@ public class PostDao {
 	}
 	
 	public List<Post> getPosts() {
-		//System.out.println("list print");
-		String sqlStatement = "select * from post";  //record -> object
+		String sqlStatement = "select * from post";
 		
-		////rowmapper -> record로 넘어온 db데이터를 객체로 mapping
+		//마감기한이 지난 post가 있는지 확인
+		checkPost();
+		
 		return jdbcTemplate.query(sqlStatement, new RowMapper<Post>(){
 
 			@Override
@@ -47,8 +49,17 @@ public class PostDao {
 			}
 		});
 	}
-
-	//입력 받은 post db에 저장
+	
+	// deadline이 어제부터  1년 전까지였던 post의 state를 수정
+	public void checkPost() {
+		
+		String sqlStateUpdateStateByDeadline = "update post set state='미완료'"
+				+ "WHERE date(deadline) >= date(subdate(now(), INTERVAL 365 DAY)) "
+				+ "and date(deadline) < date(now()) "
+				+ "and state='진행 중'";
+		
+		jdbcTemplate.update(sqlStateUpdateStateByDeadline);
+	}
 	
 	public boolean addPost(Post post) {
 		
@@ -107,6 +118,13 @@ public class PostDao {
 		
 		return (jdbcTemplate.update(sqlStatement, 
 				new Object[] {title, priority, deadline, state, description, id}) == 1);
-		
+	}
+
+	//post의 state를 '완료'로 설정
+	public boolean completePost(int id) {
+
+		String sqlStatement = "update post set state = '완료' where id = ?";
+
+		return (jdbcTemplate.update(sqlStatement, new Object[] { id }) == 1);
 	}
 }

@@ -11,7 +11,7 @@ import kr.ac.hojun.cse.model.Post;
 import kr.ac.hojun.cse.service.PostService;
 
 @Controller
-public class PostController { // controller -> service -> dao
+public class PostController { 
 	
 	@Autowired 
 	private PostService postService;

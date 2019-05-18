@@ -31,7 +31,6 @@ public class PostService {
 		return postDao.deletePost(id);
 	}
 
-	//id - 하나의 post 조회
 	public Post getPostById(int id) {
 		
 		return postDao.getPostById(id);
@@ -40,6 +39,11 @@ public class PostService {
 	public boolean updatePost(Post post) {
 		
 		return postDao.updatePost(post);
+	}
+
+	public boolean completePost(int id) {
+		
+		return postDao.completePost(id);
 	}
 	
 }
