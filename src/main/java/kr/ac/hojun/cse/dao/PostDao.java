@@ -56,7 +56,7 @@ public class PostDao {
 		String sqlStateUpdateStateByDeadline = "update post set state='미완료'"
 				+ "WHERE date(deadline) >= date(subdate(now(), INTERVAL 365 DAY)) "
 				+ "and date(deadline) < date(now()) "
-				+ "and state='진행중'";
+				+ "and state='진행 중'";
 		
 		jdbcTemplate.update(sqlStateUpdateStateByDeadline);
 	}
