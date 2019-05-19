@@ -50,7 +50,7 @@ public class PostDao {
 		});
 	}
 	
-	// deadline이 어제부터  1년 전까지였던 post의 state를 수정
+	// deadline이 지난 post의 state를 수정
 	public void checkPost() {
 		
 		String sqlStateUpdateStateByDeadline = "update post set state='미완료'"

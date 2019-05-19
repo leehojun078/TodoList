@@ -19,7 +19,7 @@
 			</div>
 			
 			<div class="form-group">
-				<label for="priority">Priority:</label>
+				<label for="priority">Priority : &nbsp;</label>
 				<sf:radiobutton path="priority" id="priority" value="상"/> 상
 				<sf:radiobutton path="priority" id="priority" value="중"/> 중
 				<sf:radiobutton path="priority" id="priority" value="하"/> 하

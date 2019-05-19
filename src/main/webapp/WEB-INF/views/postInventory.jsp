@@ -2,7 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="container-wrapper">
 	<div class="container">
@@ -14,7 +14,18 @@
 					<th>Title</th>
 					<th>Priority</th>
 					<th>Deadline</th>
-					<th>State</th>
+					<th>State 
+					&nbsp;
+					<!-- 미완료 posts counting -->
+					<c:set var="cnt" value="0" />
+ 	 			    	<c:forEach var="post" items="${posts}">
+							<c:if test="${fn:startsWith(post.state,'미')}">
+								<c:set var="cnt" value="${cnt+1}" />
+							</c:if>
+						</c:forEach> 
+					<i class="fa fa-bell-o fa-lg" style="color: red">&nbsp;${cnt}</i>
+					
+					</th>
 					<th>Description</th>
 					<th><i class="fa fa-cog fa-spin fa-lg fa-fw" aria-hidden="true"></i>Settings
 					<span class="sr-only">Saving. Hang tight!</span>

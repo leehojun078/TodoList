@@ -14,7 +14,17 @@
 					<th>Title</th>
 					<th>Priority</th>
 					<th>Deadline</th>
-					<th>State</th>
+					<th>State
+					&nbsp;
+					<!-- 미완료 posts counting -->
+					<c:set var="cnt" value="0" />
+ 	 			    	<c:forEach var="post" items="${posts}">
+							<c:if test="${fn:startsWith(post.state,'미')}">
+								<c:set var="cnt" value="${cnt+1}" />
+							</c:if>
+						</c:forEach> 
+					<i class="fa fa-bell-o fa-lg" style="color: red">&nbsp;${cnt}</i>
+					</th>
 					<th>Description</th>
 				</tr>
 			</thead>
