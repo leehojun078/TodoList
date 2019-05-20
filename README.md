@@ -58,7 +58,7 @@ tomcat을 실행하면 자동으로 프로젝트 이름과 동일한 폴더가 �
 <img width="950" alt="home" src="https://user-images.githubusercontent.com/17565204/58004361-0aaf3280-7b1e-11e9-9fb6-6157205b0ffd.PNG">
  
  
-  2. 게시글 목록 (everyone)
+  2. 게시글 목록
 
 <img width="950" alt="posts" src="https://user-images.githubusercontent.com/17565204/58004468-40ecb200-7b1e-11e9-9768-cd9a2f30838c.PNG">
 
