@@ -55,23 +55,28 @@ tomcat을 실행하면 자동으로 프로젝트 이름과 동일한 폴더가 �
 
   1. 초기화면
  
- <img width="950" alt="home" src="https://user-images.githubusercontent.com/17565204/58004361-0aaf3280-7b1e-11e9-9fb6-6157205b0ffd.PNG">
+<img width="950" alt="home" src="https://user-images.githubusercontent.com/17565204/58004361-0aaf3280-7b1e-11e9-9fb6-6157205b0ffd.PNG">
+ 
  
   2. 게시글 목록 (everyone)
 
 <img width="950" alt="posts" src="https://user-images.githubusercontent.com/17565204/58004468-40ecb200-7b1e-11e9-9768-cd9a2f30838c.PNG">
 
+
   3. 관리자 페이지
  
- <img width="950" alt="inventory" src="https://user-images.githubusercontent.com/17565204/58004489-4b0eb080-7b1e-11e9-944d-1c26b39d20d5.PNG">
- 
+<img width="950" alt="inventory" src="https://user-images.githubusercontent.com/17565204/58004489-4b0eb080-7b1e-11e9-944d-1c26b39d20d5.PNG">
+
+
   4. 게시글 관리 페이지
   
-  <img width="950" alt="inventory" src="https://user-images.githubusercontent.com/17565204/58004489-4b0eb080-7b1e-11e9-944d-1c26b39d20d5.PNG">
-  
-  5. 입력 페이지 
+<img width="950" alt="inventory" src="https://user-images.githubusercontent.com/17565204/58004489-4b0eb080-7b1e-11e9-944d-1c26b39d20d5.PNG">
+
+
+  5. 입력 페이지 (validatioin)
    
-   <img width="950" alt="input" src="https://user-images.githubusercontent.com/17565204/58004522-61b50780-7b1e-11e9-938c-d03b543db7c2.PNG">
+<img width="950" alt="input" src="https://user-images.githubusercontent.com/17565204/58005111-e8b6af80-7b1f-11e9-8c0f-da21bc317d12.PNG">
+
   
   
 ### 배포에 관해
