@@ -65,7 +65,8 @@ tomcat을 실행하면 자동으로 프로젝트 이름과 동일한 폴더가 �
 
   3. 관리자 페이지
  
-<img width="950" alt="inventory" src="https://user-images.githubusercontent.com/17565204/58004489-4b0eb080-7b1e-11e9-944d-1c26b39d20d5.PNG">
+<img width="950" alt="adminpage" src="https://user-images.githubusercontent.com/17565204/58072262-152f0200-7bda-11e9-9543-6e0908d7e3e2.PNG">
+
 
 
   4. 게시글 관리 페이지
